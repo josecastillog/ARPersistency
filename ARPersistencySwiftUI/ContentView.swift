@@ -6,33 +6,31 @@
 //
 
 import SwiftUI
-import RealityKit
 
 struct ContentView : View {
     var body: some View {
-        ARViewContainer().edgesIgnoringSafeArea(.all)
+        #if !targetEnvironment(simulator)
+        StoryBoardView()
+        #else
+        Text("Hello World!")
+        #endif
     }
 }
 
-struct ARViewContainer: UIViewRepresentable {
+#if !targetEnvironment(simulator)
+struct StoryBoardView: UIViewControllerRepresentable {
     
-    func makeUIView(context: Context) -> ARView {
-        
-        let arView = ARView(frame: .zero)
-        
-        // Load the "Box" scene from the "Experience" Reality File
-        let boxAnchor = try! Experience.loadBox()
-        
-        // Add the box anchor to the scene
-        arView.scene.anchors.append(boxAnchor)
-        
-        return arView
-        
+    func makeUIViewController(context: Context) -> some UIViewController {
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let controller = storyboard.instantiateViewController(identifier: "AR")
+        return controller
     }
     
-    func updateUIView(_ uiView: ARView, context: Context) {}
-    
+    func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
+        
+    }
 }
+#endif
 
 #if DEBUG
 struct ContentView_Previews : PreviewProvider {

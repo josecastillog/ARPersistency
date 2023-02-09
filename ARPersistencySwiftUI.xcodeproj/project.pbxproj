@@ -12,6 +12,10 @@
 		FCB1BF0029946D28000EDF28 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = FCB1BEFF29946D28000EDF28 /* Experience.rcproject */; };
 		FCB1BF0229946D2A000EDF28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCB1BF0129946D2A000EDF28 /* Assets.xcassets */; };
 		FCB1BF0529946D2A000EDF28 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCB1BF0429946D2A000EDF28 /* Preview Assets.xcassets */; };
+		FCB1BF0C29946DCB000EDF28 /* cup_saucer_set.usdz in Resources */ = {isa = PBXBuildFile; fileRef = FCB1BF0B29946DCB000EDF28 /* cup_saucer_set.usdz */; };
+		FCB1BF1229947476000EDF28 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB1BF1129947476000EDF28 /* ARViewController.swift */; };
+		FCB1BF1429947542000EDF28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCB1BF1329947542000EDF28 /* Main.storyboard */; };
+		FCB1BF16299477E7000EDF28 /* toy_drummer.usdz in Resources */ = {isa = PBXBuildFile; fileRef = FCB1BF15299477E7000EDF28 /* toy_drummer.usdz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +25,10 @@
 		FCB1BEFF29946D28000EDF28 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		FCB1BF0129946D2A000EDF28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCB1BF0429946D2A000EDF28 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FCB1BF0B29946DCB000EDF28 /* cup_saucer_set.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = cup_saucer_set.usdz; sourceTree = "<group>"; };
+		FCB1BF1129947476000EDF28 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
+		FCB1BF1329947542000EDF28 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		FCB1BF15299477E7000EDF28 /* toy_drummer.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_drummer.usdz; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,9 +61,13 @@
 		FCB1BEFA29946D28000EDF28 /* ARPersistencySwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				FCB1BF0D299473DA000EDF28 /* Storyboards */,
+				FCB1BF0E299473E6000EDF28 /* ViewControllers */,
 				FCB1BEFB29946D28000EDF28 /* AppDelegate.swift */,
 				FCB1BEFD29946D28000EDF28 /* ContentView.swift */,
 				FCB1BEFF29946D28000EDF28 /* Experience.rcproject */,
+				FCB1BF0B29946DCB000EDF28 /* cup_saucer_set.usdz */,
+				FCB1BF15299477E7000EDF28 /* toy_drummer.usdz */,
 				FCB1BF0129946D2A000EDF28 /* Assets.xcassets */,
 				FCB1BF0329946D2A000EDF28 /* Preview Content */,
 			);
@@ -68,6 +80,22 @@
 				FCB1BF0429946D2A000EDF28 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FCB1BF0D299473DA000EDF28 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FCB1BF1329947542000EDF28 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FCB1BF0E299473E6000EDF28 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FCB1BF1129947476000EDF28 /* ARViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +158,9 @@
 			files = (
 				FCB1BF0529946D2A000EDF28 /* Preview Assets.xcassets in Resources */,
 				FCB1BF0229946D2A000EDF28 /* Assets.xcassets in Resources */,
+				FCB1BF0C29946DCB000EDF28 /* cup_saucer_set.usdz in Resources */,
+				FCB1BF1429947542000EDF28 /* Main.storyboard in Resources */,
+				FCB1BF16299477E7000EDF28 /* toy_drummer.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +174,7 @@
 				FCB1BEFE29946D28000EDF28 /* ContentView.swift in Sources */,
 				FCB1BEFC29946D28000EDF28 /* AppDelegate.swift in Sources */,
 				FCB1BF0029946D28000EDF28 /* Experience.rcproject in Sources */,
+				FCB1BF1229947476000EDF28 /* ARViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,8 +311,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,8 +341,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
