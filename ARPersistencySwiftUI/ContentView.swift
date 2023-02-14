@@ -11,6 +11,7 @@ struct ContentView : View {
     var body: some View {
         #if !targetEnvironment(simulator)
         StoryBoardView()
+            .ignoresSafeArea(.all)
         #else
         Text("Hello World!")
         #endif
