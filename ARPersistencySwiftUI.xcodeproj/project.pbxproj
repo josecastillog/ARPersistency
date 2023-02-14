@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC11653F299B527000FE2FAF /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC11653D299B527000FE2FAF /* CoreData.xcdatamodeld */; };
+		FC116548299B556600FE2FAF /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC116547299B556600FE2FAF /* Utilities.swift */; };
 		FCB1BEFC29946D28000EDF28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB1BEFB29946D28000EDF28 /* AppDelegate.swift */; };
 		FCB1BEFE29946D28000EDF28 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB1BEFD29946D28000EDF28 /* ContentView.swift */; };
 		FCB1BF0029946D28000EDF28 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = FCB1BEFF29946D28000EDF28 /* Experience.rcproject */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC11653E299B527000FE2FAF /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
+		FC116547299B556600FE2FAF /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		FCB1BEF829946D28000EDF28 /* ARPersistencySwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARPersistencySwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCB1BEFB29946D28000EDF28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCB1BEFD29946D28000EDF28 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -69,6 +73,7 @@
 				FCB1BF0B29946DCB000EDF28 /* cup_saucer_set.usdz */,
 				FCB1BF15299477E7000EDF28 /* toy_drummer.usdz */,
 				FCB1BF0129946D2A000EDF28 /* Assets.xcassets */,
+				FC11653D299B527000FE2FAF /* CoreData.xcdatamodeld */,
 				FCB1BF0329946D2A000EDF28 /* Preview Content */,
 			);
 			path = ARPersistencySwiftUI;
@@ -94,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				FCB1BF1129947476000EDF28 /* ARViewController.swift */,
+				FC116547299B556600FE2FAF /* Utilities.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -172,7 +178,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCB1BEFE29946D28000EDF28 /* ContentView.swift in Sources */,
+				FC116548299B556600FE2FAF /* Utilities.swift in Sources */,
 				FCB1BEFC29946D28000EDF28 /* AppDelegate.swift in Sources */,
+				FC11653F299B527000FE2FAF /* CoreData.xcdatamodeld in Sources */,
 				FCB1BF0029946D28000EDF28 /* Experience.rcproject in Sources */,
 				FCB1BF1229947476000EDF28 /* ARViewController.swift in Sources */,
 			);
@@ -311,7 +319,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -341,7 +349,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -377,6 +385,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FC11653D299B527000FE2FAF /* CoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FC11653E299B527000FE2FAF /* CoreData.xcdatamodel */,
+			);
+			currentVersion = FC11653E299B527000FE2FAF /* CoreData.xcdatamodel */;
+			name = CoreData.xcdatamodeld;
+			path = ../CoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = FCB1BEF029946D28000EDF28 /* Project object */;
 }
